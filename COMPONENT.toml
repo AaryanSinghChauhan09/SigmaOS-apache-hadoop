@@ -3,7 +3,7 @@ name = "SigmaOS-apache-hadoop"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "apache-hadoop component"
+description = "Apache Hadoop distributed storage compatibility layer for SigmaOS"
 upstream = []
 
 [contract]
