@@ -2,28 +2,14 @@
 name = "SigmaOS-apache-hadoop"
 version = "0.1.0"
 edition = "2021"
-description = "Apache Hadoop distributed storage compatibility layer for SigmaOS"
-license = "MIT"
-repository = "https://github.com/AaryanSinghChauhan09/SigmaOS-apache-hadoop"
-
-[dependencies]
-anyhow = "1.0"
-tokio = { version = "1.35", features = ["full"] }
-serde = { version = "1.0", features = ["derive"] }
-serde_json = "1.0"
-log = "0.4"
-env_logger = "0.11"
+license = "Apache-2.0"
+description = "SigmaOS apache_hadoop component"
 
 [lib]
 name = "apache_hadoop"
 path = "src/lib.rs"
 
-[[bin]]
-name = "sigmaos-apache-hadoop"
-path = "src/main.rs"
+[dependencies]
+thiserror = "1"
 
-[profile.release]
-opt-level = 3
-lto = true
-codegen-units = 1
-panic = "abort"
+[dev-dependencies]
